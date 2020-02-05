@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="DJF-Q5-2H4">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="Ahv-cO-hBn">
+            <objects>
+                <viewController id="DJF-Q5-2H4" customClass="ViewController" customModule="JSON_Codable_Protocol" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hSC-LV-vvV">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="H4I-Tt-YrG">
+                                <rect key="frame" x="100" y="264.5" width="214" height="114"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="H4I-Tt-YrG" secondAttribute="height" multiplier="15:8" id="KQB-YW-1d2"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="28" translatesAutoresizingMaskIntoConstraints="NO" id="Frt-sh-SKA">
+                                <rect key="frame" x="50" y="398.5" width="314" height="214.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iFP-qj-Yga">
+                                        <rect key="frame" x="143" y="0.0" width="28" height="20.5"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iUW-Qb-fcb">
+                                        <rect key="frame" x="117.5" y="48.5" width="79.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lat" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q6y-vm-0bN">
+                                        <rect key="frame" x="146.5" y="97" width="21.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Long" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VD3-nP-aAv">
+                                        <rect key="frame" x="139.5" y="145.5" width="35.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5dx-KD-fZ6">
+                                        <rect key="frame" x="140.5" y="194" width="33" height="20.5"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NQT-CM-ywD">
+                                <rect key="frame" x="80" y="692" width="80" height="50"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="DrD-Fi-wFU"/>
+                                    <constraint firstAttribute="height" constant="50" id="sHD-Il-b4L"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="17"/>
+                                <state key="normal" title="Previous">
+                                    <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="handlePreviousClick:" destination="DJF-Q5-2H4" eventType="touchUpInside" id="m5x-23-IUg"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Codable Protocol" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kFP-jw-lnE">
+                                <rect key="frame" x="146" y="164" width="122.5" height="20.5"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z1H-O6-99k">
+                                <rect key="frame" x="254" y="692" width="80" height="50"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="5vC-fA-POc"/>
+                                    <constraint firstAttribute="height" constant="50" id="x44-PZ-QcI"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="17"/>
+                                <state key="normal" title="Next">
+                                    <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="handleNextClick:" destination="DJF-Q5-2H4" eventType="touchUpInside" id="0YI-C9-FvT"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="kFP-jw-lnE" firstAttribute="top" secondItem="6Nk-rw-r45" secondAttribute="top" constant="120" id="0Bn-mD-squ"/>
+                            <constraint firstItem="H4I-Tt-YrG" firstAttribute="centerX" secondItem="hSC-LV-vvV" secondAttribute="centerX" id="7AD-w7-JTn"/>
+                            <constraint firstItem="Frt-sh-SKA" firstAttribute="leading" secondItem="6Nk-rw-r45" secondAttribute="leading" constant="50" id="Cgk-lK-6hp"/>
+                            <constraint firstItem="NQT-CM-ywD" firstAttribute="leading" secondItem="6Nk-rw-r45" secondAttribute="leading" constant="80" id="I6K-Az-O6v"/>
+                            <constraint firstItem="6Nk-rw-r45" firstAttribute="bottom" secondItem="NQT-CM-ywD" secondAttribute="bottom" constant="120" id="Izh-GW-5cl"/>
+                            <constraint firstItem="H4I-Tt-YrG" firstAttribute="leading" secondItem="6Nk-rw-r45" secondAttribute="leading" constant="100" id="LMi-uS-1TM"/>
+                            <constraint firstItem="6Nk-rw-r45" firstAttribute="trailing" secondItem="H4I-Tt-YrG" secondAttribute="trailing" constant="100" id="UaY-i3-lLG"/>
+                            <constraint firstItem="kFP-jw-lnE" firstAttribute="centerX" secondItem="hSC-LV-vvV" secondAttribute="centerX" id="W2W-gn-PM3"/>
+                            <constraint firstItem="6Nk-rw-r45" firstAttribute="trailing" secondItem="Frt-sh-SKA" secondAttribute="trailing" constant="50" id="Wc0-u4-aCI"/>
+                            <constraint firstItem="Frt-sh-SKA" firstAttribute="top" secondItem="H4I-Tt-YrG" secondAttribute="bottom" constant="20" id="Yds-Jz-kbR"/>
+                            <constraint firstItem="6Nk-rw-r45" firstAttribute="bottom" secondItem="Z1H-O6-99k" secondAttribute="bottom" constant="120" id="ZZK-gu-QRC"/>
+                            <constraint firstItem="6Nk-rw-r45" firstAttribute="trailing" secondItem="Z1H-O6-99k" secondAttribute="trailing" constant="80" id="kaz-CG-uZd"/>
+                            <constraint firstItem="H4I-Tt-YrG" firstAttribute="top" secondItem="kFP-jw-lnE" secondAttribute="bottom" constant="80" id="tD8-ex-zkG"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Nk-rw-r45"/>
+                    </view>
+                    <connections>
+                        <outlet property="dateLabel" destination="5dx-KD-fZ6" id="fXs-Oe-tbT"/>
+                        <outlet property="descriptionLabel" destination="iUW-Qb-fcb" id="Dab-Oa-E5W"/>
+                        <outlet property="imageView" destination="H4I-Tt-YrG" id="7nu-by-bVV"/>
+                        <outlet property="latitudeLabel" destination="q6y-vm-0bN" id="2Rf-a6-muk"/>
+                        <outlet property="longitudeLabel" destination="VD3-nP-aAv" id="aWt-cu-Y5y"/>
+                        <outlet property="nextButton" destination="Z1H-O6-99k" id="hCj-sz-Nmb"/>
+                        <outlet property="previousButton" destination="NQT-CM-ywD" id="qOQ-58-922"/>
+                        <outlet property="titleLabel" destination="iFP-qj-Yga" id="1TP-5j-2Ti"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lNZ-0h-BRn" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-557" y="100"/>
+        </scene>
+    </scenes>
+</document>
